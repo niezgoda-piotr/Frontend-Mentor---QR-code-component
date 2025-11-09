@@ -15,9 +15,11 @@
 .DS_Store
 .prettierignore
 
-.idea
+.idea/
 .vscode/*
 !.vscode/extensions.json
 
 node_modules
 dist
+
+design

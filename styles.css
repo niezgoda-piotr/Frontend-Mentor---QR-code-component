@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('fonts/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+:root {
+    --slate-900: #1F314F;
+    --slate-500: #68778D;
+    --slate-300: #D5E1EF;
+    --white: #ffffff;
+
+    --font-size-regular: 15px;
+    --font-weight-regular: normal;
+    --line-height-regular: 1.4;
+
+    --font-size-bold: 22px;
+    --font-weight-bold: bold;
+    --line-height-bold: 1.2;
+
+    --spacing-big: 40px;
+    --spacing-medium: 24px;
+    --spacing-small: 16px;
+}
+
 *,
 *::before,
 *::after {
@@ -5,5 +29,31 @@
 }
 
 body {
-    color: red;
+    font-family: 'Outfit', monospace;
+    font-size: var(--font-size-regular);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-regular);
+}
+
+.div1 {
+    background-color: var(--slate-900);
+    color: var(--white);
+
+    font-size: var(--font-size-bold);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-bold);
+}
+
+.div2 {
+    background-color: var(--slate-500);
+    font-size: var(--font-size-regular);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-regular);
+}
+
+.div3 {
+    background-color: var(--slate-300);
+    font-size: var(--font-size-regular);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-regular);
 }
