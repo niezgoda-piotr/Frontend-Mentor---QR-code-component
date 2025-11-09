@@ -22,38 +22,62 @@
     --spacing-small: 16px;
 }
 
+/* Reset */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* *** */
+
 body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+
     font-family: 'Outfit', monospace;
     font-size: var(--font-size-regular);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-regular);
+
+    background-color: var(--slate-300);
 }
 
-.div1 {
-    background-color: var(--slate-900);
-    color: var(--white);
+main {
+    width: 320px;
+    padding: var(--spacing-small)
+            var(--spacing-small)
+            var(--spacing-big)
+            var(--spacing-small);
+    background-color: var(--white);
+    border-radius: var(--spacing-small);
+}
 
+main img {
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: var(--spacing-small);
+}
+
+main h1 {
     font-size: var(--font-size-bold);
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-bold);
+    color: var(--slate-900);
+    margin-top: var(--spacing-medium);
 }
 
-.div2 {
-    background-color: var(--slate-500);
-    font-size: var(--font-size-regular);
-    font-weight: var(--font-weight-regular);
-    line-height: var(--line-height-regular);
-}
-
-.div3 {
-    background-color: var(--slate-300);
-    font-size: var(--font-size-regular);
-    font-weight: var(--font-weight-regular);
-    line-height: var(--line-height-regular);
+main p {
+    color: var(--slate-500);
+    margin-top: var(--spacing-small);
 }
