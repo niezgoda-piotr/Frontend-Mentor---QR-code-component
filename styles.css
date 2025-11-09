@@ -54,19 +54,19 @@ body {
 }
 
 main {
-    width: 320px;
+    max-width: 320px;
     padding: var(--spacing-small)
             var(--spacing-small)
             var(--spacing-big)
             var(--spacing-small);
     background-color: var(--white);
-    border-radius: var(--spacing-small);
+    border-radius: 20px;
 }
 
 main img {
     max-width: 100%;
     object-fit: contain;
-    border-radius: var(--spacing-small);
+    border-radius: 10px;
 }
 
 main h1 {
