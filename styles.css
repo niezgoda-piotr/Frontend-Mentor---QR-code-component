@@ -54,7 +54,7 @@ body {
 }
 
 main {
-    max-width: 320px;
+    max-width: 20rem;
     padding: var(--spacing-small)
             var(--spacing-small)
             var(--spacing-big)
@@ -83,7 +83,6 @@ main h1 {
 main p {
     color: var(--slate-500);
     margin-top: var(--spacing-small);
-    margin-top: var(--spacing-medium);
     padding-left: var(--spacing-small);
     padding-right: var(--spacing-small);
     text-align: center;
